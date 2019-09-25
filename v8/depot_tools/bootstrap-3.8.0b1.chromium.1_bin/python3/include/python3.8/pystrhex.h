@@ -1,0 +1,1 @@
+../../../.cipd/pkgs/2/_current/include/python3.8/pystrhex.h
