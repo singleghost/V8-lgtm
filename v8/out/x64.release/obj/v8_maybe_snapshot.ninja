@@ -1,8 +1,0 @@
-defines = -DUSE_UDEV -DUSE_AURA=1 -DUSE_GLIB=1 -DUSE_NSS_CERTS=1 -DUSE_X11=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_GNU_SOURCE -DCR_CLANG_REVISION=\"372314-13bdae85-2\" -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D_FORTIFY_SOURCE=2 -D_LIBCPP_ABI_UNSTABLE -D_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS -D_LIBCXXABI_DISABLE_VISIBILITY_ANNOTATIONS -D_LIBCPP_ENABLE_NODISCARD -DCR_LIBCXX_REVISION=361348 -DCR_SYSROOT_HASH=e7c53f04bd88d29d075bfd1f62b073aeb69cbe09 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0
-include_dirs = -I../.. -Igen
-label_name = v8_maybe_snapshot
-target_out_dir = obj
-target_output_name = v8_maybe_snapshot
-
-
-build obj/v8_maybe_snapshot.stamp: stamp || obj/v8_external_snapshot.stamp obj/v8_base_without_compiler.stamp obj/third_party/icu/libicui18n.a obj/third_party/icu/libicuuc.a obj/torque_generated_definitions.stamp obj/v8_headers.stamp obj/v8_version.stamp obj/libv8_libbase.a obj/v8_libsampler.stamp obj/v8_shared_internal_headers.stamp obj/src/inspector/inspector.stamp obj/src/inspector/inspector_test_headers.stamp obj/src/inspector/inspector_string_conversions.stamp obj/third_party/inspector_protocol/libencoding.a obj/third_party/inspector_protocol/libbindings.a obj/v8_compiler.stamp
